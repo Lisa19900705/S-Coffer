@@ -1,0 +1,43 @@
+.header{
+    background: #b0cac11f;;
+    box-shadow: 0 2px 8px #bcded382;
+    height: 50px;
+    width: 100%;
+    top: 0px;
+    .top-grad{
+        height: 5px;
+        background: -webkit-linear-gradient(left, #f1dc17d6, #1da57ac7); /* Safari 5.1 - 6.0 */
+        background: -o-linear-gradient(right, #f1dc17d6, #1da57ac7); /* Opera 11.1 - 12.0 */
+        background: -moz-linear-gradient(right, #f1dc17d6, #1da57ac7); /* Firefox 3.6 - 15 */
+        background: linear-gradient(to right, #f1dc17d6, #1da57ac7); /* 标准的语法（必须放在最后） */
+    } 
+    .logo{
+        position: relative;
+        padding-left: 16px;
+        overflow: hidden;
+        .logo-image{
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            margin-top: 4px;
+        }
+        .logo-txt{
+            font-size: 18px;
+            font-weight: bold;
+            float: left;
+            position: absolute;
+            left: 60px;
+            top: 17px;
+            &::after{
+                content: '';
+                background: url(../../common/image/gold2.png) no-repeat;
+                background-size: 15px;
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                top: 6px;
+                margin-left: 3px;
+            }
+        }
+    }
+}
